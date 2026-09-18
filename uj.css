@@ -1,0 +1,17 @@
+p{
+    line-height: 1.5;
+    text-indent: 1em;
+}
+
+button{
+    margin: 5px;
+}
+
+h1{
+    text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+}

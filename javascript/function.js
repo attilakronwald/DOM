@@ -3,6 +3,7 @@ gomb1.addEventListener("click", function(){
 } 
 )
 
+
 gomb2.addEventListener("pointerover", function(){
     body.style.backgroundColor = "Blue"
 } 

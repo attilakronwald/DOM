@@ -22,3 +22,37 @@ form.appendChild(gomb)
 
 document.body.appendChild(form)
 document.body.appendChild(eredmeny)
+
+form.addEventListener("submit", function(event){
+    event.preventDefault()
+    const nev = nevInput.value.trim()
+    const email = emailInput.value.trim()
+
+    if (nev === ""){
+        eredmeny.textContent = "A nev megadasa kotelezo"
+        return
+    }
+
+    if (nev.length < 3){
+        eredmeny.textContent = "A név legyen legalább 3 karakter"
+        return
+    }
+
+    if (email === ""){
+        eredmeny.textContent = "Az email megadasa kotelezo"
+        return
+    }
+
+    if (!email.includes("@")){
+        eredmeny.textContent = "Nem megfelelo email cim"
+        return
+    }
+
+    if (!email.includes(".")){
+        eredmeny.textContent = "Nem megfelelo email cim"
+        return
+    }
+
+    eredmeny.textContent = "Név: " + nev + " | E-mail: " + email
+})
+
