@@ -1,5 +1,5 @@
-gomb.addEventListener("click", function(){
-    alert("Segg")
+gomb1.addEventListener("click", function(){
+    alert("Dani egy cigany. <3 ")
 } 
 )
 
